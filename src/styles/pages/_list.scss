@@ -1,0 +1,96 @@
+.list {
+  padding: 38px 0 256px;
+}
+
+.list__container {
+  @extend %container;
+  text-align: left;
+}
+
+.list__title {
+  margin-bottom: 38px;
+
+  font-size: $font-size-title;
+}
+
+.list__subtitle {
+  float: left;
+  margin-bottom: 20px;
+
+  line-height: 21px;
+  font-size: $font-size-main;
+}
+
+.list__button {
+  @extend %button;
+  @extend %icon-plus;
+
+  &::before {
+    margin-right: 11px;
+  }
+
+  float: right;
+  padding: 4px 25px 6px 16px;
+}
+
+.list__field-block {
+  @extend %icon-search;
+  position: relative;
+  color: $border-color;
+
+  &::after {
+    position: absolute;
+    top: 11px;
+    right: 23px;
+    font-size: $font-size-field;
+    cursor: pointer;
+  }
+}
+
+.list__field {
+  @extend %field;
+  margin-bottom: 32px;
+  padding-right: 45px;
+}
+
+.catalog__item {
+  float: left;
+  width: 23.5%;
+  margin: 0 2% 36px 0;
+  position: relative;
+
+  &_last {
+    margin: 0 0 36px;
+  }
+}
+
+.list__menu-item {
+  display: inline-block;
+  margin-bottom: 24px;
+  width: 152px;
+
+  color: $text-color;
+  border: $border;
+  text-align: center;
+  padding: 4px 0 6px;
+  cursor: pointer;
+
+  &_next {
+    background: $element-color;
+    color: $extra-color;
+    border: $element-border;
+  }
+
+  &:last-child {
+    border-radius: 0 $border-radius $border-radius 0;
+  }
+
+  &:first-child {
+    border-radius: $border-radius 0 0 $border-radius;
+  }
+}
+
+.list__line {
+  border-top: 1px solid $line-color;
+  margin: 8px 0 16px;
+}

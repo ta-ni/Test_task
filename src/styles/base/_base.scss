@@ -1,0 +1,20 @@
+body {
+  background: $extra-color;
+  color: $main-color;
+  font-size: $font-size-main;
+  font-family: $font-family-primary;
+}
+
+
+::-webkit-input-placeholder {
+  color: $border-color;
+}
+::-moz-placeholder {
+  color: $border-color;
+}
+:-ms-input-placeholder {
+  color: $border-color;
+}
+:-moz-placeholder {
+  color: $border-color;
+}

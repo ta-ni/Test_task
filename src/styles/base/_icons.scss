@@ -1,0 +1,39 @@
+$font-Flaticon-menu: "\f100";
+$font-Flaticon-plus-black-symbol: "\f101";
+$font-Flaticon-search: "\f102";
+
+%icon-params {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+%icon-search {
+  &:after{
+    @extend %icon-params;
+    content: $font-Flaticon-search;
+  }
+}
+
+%icon-plus {
+  &:before{
+    @extend %icon-params;
+    content: $font-Flaticon-plus-black-symbol;
+  }
+}
+
+%icon-dots {
+  &:before{
+    @extend %icon-params;
+    content: $font-Flaticon-menu;
+  }
+}
